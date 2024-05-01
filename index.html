@@ -58,10 +58,12 @@
         <template id="infoTemplate">
           <div class="info">
             <img class="pokemon-card-image" src={{imageUrl}} />
-            <h2 class="pokemon-card-title">{{name}}</h5>
-            {{#types}}
-            <p class="pokemon-card-subtitle">{{.}}</p>
-            {{/types}}
+            <h2 class="pokemon-card-title">{{name}}</h2>
+            <div>
+              {{#types}}
+              <p class="pokemon-card-subtitle">{{.}}</p>
+              {{/types}}
+            </div>
           </div>
         </template>
         
